@@ -81,10 +81,13 @@
           <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
           >
-            <h3 class="uk-card-title">AFSLAG VIDEO</h3>
-            <video id="myaudio" controls>
-              <source src="@assets/muziek/video.mp4" type="audio/mpeg" />
-            </video>
+            <h3 class="uk-card-title">VIDEOCLIP</h3>
+            <iframe
+              style="aspect-ratio: 1.78"
+              class="uk-width-1-1 uk-height-auto"
+              src="https://www.youtube.com/embed/ToBxNtSZTfM"
+            >
+            </iframe>
           </div>
         </div>
 
@@ -129,6 +132,7 @@
 
 <style lang="less" scoped>
 .muziek {
+  min-height: 100vh;
   background: rgb(42, 83, 170);
 }
 

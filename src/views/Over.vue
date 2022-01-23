@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="over">
     <header class="uk-text-center">
       <img class="header" src="@assets/headers/over.png" />
     </header>
@@ -29,6 +29,11 @@ export default {};
 </script>
 
 <style lang="less" scoped>
+
+.over {
+    min-height: 100vh;
+}
+
 .header {
   width: 30rem;
 }

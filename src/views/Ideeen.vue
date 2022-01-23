@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="ideeen">
     <header class="uk-text-center">
       <img class="header" src="@assets/headers/ideeen.png" />
     </header>
@@ -29,6 +29,9 @@ export default {};
 </script>
 
 <style lang="less" scoped>
+.ideeen {
+  min-height: 100vh;
+}
 .header {
   width: 30rem;
 }

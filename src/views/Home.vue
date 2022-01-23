@@ -4,7 +4,7 @@
       <img class="background" src="@assets/home/background.jpg" />
 
       <div
-        @click="$router.push({ name: 'Films' })"
+        @click="openView('films')"
         class="widget widget-grow films uk-visible-toggle"
       >
         <img class="closed" src="@assets/home/films-1.png" />
@@ -12,7 +12,7 @@
       </div>
 
       <div
-        @click="$router.push({ name: 'Over' })"
+        @click="openView('over')"
         class="widget widget-grow over uk-visible-toggle"
       >
         <img class="closed" src="@assets/home/over-1.png" />
@@ -20,15 +20,7 @@
       </div>
 
       <div
-        @click="$router.push({ name: 'Muziek' })"
-        class="widget widget-grow muziek uk-visible-toggle"
-      >
-        <img class="closed" src="@assets/home/muziek-1.png" />
-        <img class="uk-invisible-hover" src="@assets/home/muziek-2.png" />
-      </div>
-
-      <div
-        @click="$router.push({ name: 'LiveEvents' })"
+        @click="openView('events')"
         class="widget widget-grow events uk-visible-toggle"
       >
         <img class="closed" src="@assets/home/events-1.png" />
@@ -36,7 +28,7 @@
       </div>
 
       <div
-        @click="$router.push({ name: 'Ideeen' })"
+        @click="openView('ideeen')"
         class="widget widget-grow ideeen uk-visible-toggle"
       >
         <img class="closed" src="@assets/home/ideeen-1.png" />
@@ -44,18 +36,15 @@
       </div>
 
       <div
-        @click="$router.push({ name: 'Tekeningen' })"
+        @click="openView('tekeningen')"
         class="widget widget-grow tekeningen uk-visible-toggle"
       >
         <img class="closed" src="@assets/home/tekeningen-1.png" />
-        <img
-          class="uk-invisible-hover"
-          src="@assets/home/tekeningen-2.png"
-        />
+        <img class="uk-invisible-hover" src="@assets/home/tekeningen-2.png" />
       </div>
 
       <div
-        @click="$router.push({ name: 'Fotos' })"
+        @click="openView('fotos')"
         class="widget widget-grow scanner uk-visible-toggle"
       >
         <img class="closed" src="@assets/home/fotos-1.png" />
@@ -63,7 +52,16 @@
       </div>
 
       <div
-        @click="$router.push({ name: 'Grafisch' })"
+        @click="openView('muziek')"
+        class="widget widget-grow muziek uk-visible-toggle"
+      >
+        <img class="closed" src="@assets/home/muziek-1.png" />
+        <img class="uk-invisible-hover" src="@assets/home/stekker.png" />
+        <img class="uk-invisible-hover" src="@assets/home/muziek-2.png" />
+      </div>
+
+      <div
+        @click="openView('grafisch')"
         class="widget widget-grow laptop uk-visible-toggle"
       >
         <img class="closed" src="@assets/home/grafisch-1.png" />
@@ -71,7 +69,7 @@
       </div>
 
       <div
-        @click="$router.push({ name: 'Graffiti' })"
+        @click="openView('graffiti')"
         class="widget widget-grow graffiti uk-visible-toggle"
       >
         <img class="closed" src="@assets/home/graffiti-1.png" />
@@ -80,14 +78,23 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   mounted() {
-    this.animateWidgets();
+    window.addEventListener("load", () => this.animateWidgets());
   },
 
   methods: {
+    openView(widget) {
+      if (/Mobi|Android/i.test(navigator.userAgent)) {
+        setTimeout(() => {
+          this.$router.push({ name: widget });
+        }, 700);
+      } else {
+        this.$router.push({ name: widget });
+      }
+    },
+
     animateWidgets() {
       let timeOutCount = 0;
       const widgets = document.getElementsByClassName("widget");
@@ -111,7 +118,6 @@ export default {
   },
 };
 </script>
-
 <style lang="less" scoped>
 .home {
   background: #b93a19;
@@ -161,6 +167,18 @@ export default {
   top: 32%;
   left: 59%;
   width: 17%;
+
+  &:nth-child(2) {
+    top: 55%;
+    left: 73.5%;
+    width: 8%;
+  }
+
+  &:nth-child(3) {
+    top: 32%;
+    left: 59%;
+    width: 17%;
+  }
 }
 
 .events > img {

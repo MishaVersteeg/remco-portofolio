@@ -1,9 +1,8 @@
 <template>
   <div class="fotos">
     <header class="uk-text-center">
-      <img class="uk-width-1-3" src="@assets/fotos/header.png" />
+      <img class="uk-width-1-3 header" src="@assets/fotos/header.png" />
     </header>
-
 
     <div class="uk-container">
       <div
@@ -14,133 +13,133 @@
           <img
             uk-img
             @click="openModal('foto-1.jpg')"
-            :data-src="require('@assets/fotos/foto-1.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-1.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-2.jpg')"
-            :data-src="require('@assets/fotos/foto-2.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-2.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-3.jpg')"
-            :data-src="require('@assets/fotos/foto-3.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-3.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-4.jpg')"
-            :data-src="require('@assets/fotos/foto-4.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-4.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-5.jpg')"
-            :data-src="require('@assets/fotos/foto-5.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-5.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-6.jpg')"
-            :data-src="require('@assets/fotos/foto-6.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-6.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-7.jpg')"
-            :data-src="require('@assets/fotos/foto-7.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-7.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-8.jpg')"
-            :data-src="require('@assets/fotos/foto-8.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-8.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-9.jpg')"
-            :data-src="require('@assets/fotos/foto-9.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-9.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-10.jpg')"
-            :data-src="require('@assets/fotos/foto-10.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-10.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-11.jpg')"
-            :data-src="require('@assets/fotos/foto-11.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-11.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-12.jpg')"
-            :data-src="require('@assets/fotos/foto-12.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-12.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-13.jpg')"
-            :data-src="require('@assets/fotos/foto-13.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-13.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-14.jpg')"
-            :data-src="require('@assets/fotos/foto-14.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-14.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-15.jpg')"
-            :data-src="require('@assets/fotos/foto-15.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-15.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-16.jpg')"
-            :data-src="require('@assets/fotos/foto-16.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-16.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-17.jpg')"
-            :data-src="require('@assets/fotos/foto-17.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-17.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-18.jpg')"
-            :data-src="require('@assets/fotos/foto-18.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-18.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-19.jpg')"
-            :data-src="require('@assets/fotos/foto-19.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-19.jpg')"
           />
         </div>
 
@@ -148,7 +147,7 @@
           <img
             uk-img
             @click="openModal('foto-20.jpg')"
-            :data-src="require('@assets/fotos/foto-20.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-20.jpg')"
           />
         </div>
 
@@ -156,7 +155,7 @@
           <img
             uk-img
             @click="openModal('foto-21.jpg')"
-            :data-src="require('@assets/fotos/foto-21.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-21.jpg')"
           />
         </div>
 
@@ -164,7 +163,7 @@
           <img
             uk-img
             @click="openModal('foto-22.jpg')"
-            :data-src="require('@assets/fotos/foto-22.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-22.jpg')"
           />
         </div>
 
@@ -172,119 +171,119 @@
           <img
             uk-img
             @click="openModal('foto-23.jpg')"
-            :data-src="require('@assets/fotos/foto-23.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-23.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-24.jpg')"
-            :data-src="require('@assets/fotos/foto-24.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-24.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-25.jpg')"
-            :data-src="require('@assets/fotos/foto-25.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-25.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-26.jpg')"
-            :data-src="require('@assets/fotos/foto-26.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-26.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-27.jpg')"
-            :data-src="require('@assets/fotos/foto-27.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-27.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-28.jpg')"
-            :data-src="require('@assets/fotos/foto-28.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-28.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-29.jpg')"
-            :data-src="require('@assets/fotos/foto-29.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-29.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-30.jpg')"
-            :data-src="require('@assets/fotos/foto-30.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-30.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-31.jpg')"
-            :data-src="require('@assets/fotos/foto-31.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-31.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-32.jpg')"
-            :data-src="require('@assets/fotos/foto-32.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-32.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-33.jpg')"
-            :data-src="require('@assets/fotos/foto-33.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-33.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-34.jpg')"
-            :data-src="require('@assets/fotos/foto-34.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-34.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-35.jpg')"
-            :data-src="require('@assets/fotos/foto-35.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-35.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-36.jpg')"
-            :data-src="require('@assets/fotos/foto-36.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-36.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-37.jpg')"
-            :data-src="require('@assets/fotos/foto-37.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-37.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-38.jpg')"
-            :data-src="require('@assets/fotos/foto-38.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-38.jpg')"
           />
         </div>
         <div>
           <img
             uk-img
             @click="openModal('foto-39.jpg')"
-            :data-src="require('@assets/fotos/foto-39.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-39.jpg')"
           />
         </div>
       </div>
@@ -336,11 +335,17 @@ export default {
 
 <style lang="less" scoped>
 .fotos {
+  min-height: 100vh;
   background: #222222;
 }
 
 img {
   cursor: pointer;
+  transition: transform .2s ease-in-out;
+}
+
+img:hover:not(.modal, .modal > *):not(.header) {
+  transform: scale(1.1);
 }
 
 .modal {

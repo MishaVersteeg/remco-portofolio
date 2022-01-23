@@ -12,46 +12,46 @@ const routes = [
   },
   {
     path: '/live-events',
-    name: 'LiveEvents',
+    name: 'events',
     component: () => import('../views/LiveEvents.vue')
   },
   {
     path: '/films',
-    name: 'Films',
+    name: 'films',
     component: () => import('../views/Films.vue')
   },  {
     path: '/graffiti',
-    name: 'Graffiti',
+    name: 'graffiti',
     component: () => import('../views/Graffiti.vue')
   },
   {
     path: '/ideeen',
-    name: 'Ideeen',
+    name: 'ideeen',
     component: () => import('../views/Ideeen.vue')
   },
   {
     path: '/muziek',
-    name: 'Muziek',
+    name: 'muziek',
     component: () => import('../views/Muziek.vue')
   },
   {
     path: '/grafisch',
-    name: 'Grafisch',
+    name: 'grafisch',
     component: () => import('../views/Grafisch.vue')
   },
   {
     path: '/over',
-    name: 'Over',
+    name: 'over',
     component: () => import('../views/Over.vue')
   },
   {
     path: '/fotos',
-    name: 'Fotos',
+    name: 'fotos',
     component: () => import('../views/Fotos.vue')
   },
   {
     path: '/tekeningen',
-    name: 'Tekeningen',
+    name: 'tekeningen',
     component: () => import('../views/Tekeningen.vue')
   },
 ]

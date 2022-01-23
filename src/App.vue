@@ -1,5 +1,13 @@
 <template>
-  <router-view class="app" />
+  <div>
+    <router-view class="app" />
+
+    <footer class="footer">
+      <div>
+        Remo Efdé ©{{ new Date().getFullYear() }}
+      </div>
+    </footer>
+  </div>
 </template>
 
 <script>
@@ -15,7 +23,6 @@ export default {
 
 html {
   // background: #b93a19;
-
 }
 .app {
   // height: 100vh;
@@ -39,6 +46,20 @@ html {
   }
   ::-moz-selection {
     background: transparent;
+  }
+}
+
+.footer {
+  margin-top: -5rem;
+
+  height: 5rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  div {
+    margin: 2rem;
+    font-size: 3rem;
+    color: rgb(218, 218, 218);
   }
 }
 </style>

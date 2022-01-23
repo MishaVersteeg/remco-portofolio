@@ -20,7 +20,7 @@
       />
     </div>
 
-    <div
+    <div @mouseenter="dropDown = true"
       class="uk-margin-large-top uk-flex uk-flex-center uk-grid-large uk-child-width-1-4"
     >
       <img
@@ -113,6 +113,7 @@ export default {
 <style lang="less" scoped>
 
 .grafisch {
+    min-height: 100vh;
     background: #b93a19;
 }
 
