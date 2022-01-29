@@ -1,7 +1,7 @@
 <template>
   <div class="over">
-    <header class="uk-text-center">
-      <img class="header" src="@assets/headers/over.png" />
+    <header>
+      <img src="@assets/over/header.png" />
     </header>
 
     <div class="uk-grid-small uk-child-width-1-3">
@@ -21,6 +21,8 @@
         <img src="" alt="" />
       </div>
     </div>
+
+    <div class="uk-padding" />
   </div>
 </template>
 
@@ -29,9 +31,8 @@ export default {};
 </script>
 
 <style lang="less" scoped>
-
 .over {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .header {

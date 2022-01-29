@@ -1,7 +1,7 @@
 <template>
   <div class="ideeen">
-    <header class="uk-text-center">
-      <img class="header" src="@assets/headers/ideeen.png" />
+    <header>
+      <img src="@assets/ideeen/header.png" />
     </header>
 
     <div class="uk-grid-small uk-child-width-1-3">
@@ -21,6 +21,8 @@
         <img src="" alt="" />
       </div>
     </div>
+
+    <div class="uk-padding" />
   </div>
 </template>
 

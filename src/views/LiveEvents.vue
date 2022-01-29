@@ -1,8 +1,8 @@
 <template>
   <div class="live-events">
     <div class="live-events-1">
-      <header class="uk-text-center">
-        <img class="uk-width-1-3" src="@assets/headers/live-events.png" />
+      <header>
+        <img src="@assets/live-events/header.png" />
       </header>
 
       <div class="uk-container">
@@ -10,18 +10,14 @@
           class="uk-grid-small uk-grid uk-child-width-1-3@m uk-child-width-1-2@s"
           uk-grid
         >
-          <div class="uk-align-center uk-width-5-6">
-            <div
-              class="uk-card uk-card-default uk-card-body card card-transparent"
+          <div class="uk-width-1-1">
+            <h3 class="uk-card-title">HET VERMISTE VARKEN</h3>
+            <iframe
+              style="aspect-ratio: 1.78"
+              class="uk-width-1-1 uk-height-auto"
+              src="https://www.youtube.com/embed/mk9lzaxL2pw"
             >
-              <h3 class="uk-card-title">HET VERMISTE VARKEN</h3>
-              <iframe
-                style="aspect-ratio: 1.78"
-                class="uk-width-1-1 uk-height-auto"
-                src="https://www.youtube.com/embed/mk9lzaxL2pw"
-              >
-              </iframe>
-            </div>
+            </iframe>
           </div>
 
           <div>
@@ -75,7 +71,7 @@
 
           <!-- <img src="@assets/live-events/huiskamerfilmfestival-6.JPG" /> -->
         </div>
-        <div class="uk-padding-large"></div>
+        <div class="uk-padding" />
       </div>
     </div>
   </div>
@@ -87,7 +83,7 @@ export default {};
 
 <style lang="less" scoped>
 .live-events {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .live-events-1 {

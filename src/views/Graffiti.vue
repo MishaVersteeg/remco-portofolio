@@ -1,8 +1,9 @@
 <template>
   <div class="graffiti">
-    <header class="uk-text-center">
-      <img class="header" src="@assets/headers/graffiti.png" />
+    <header>
+      <img src="@assets/graffiti/header.png" />
     </header>
+
     <div class="uk-container uk-container">
       <div
         class="uk-grid- uk-child-width-1-2 uk-text-center"
@@ -58,6 +59,7 @@
         </div>
       </div>
     </div>
+    
     <div class="uk-padding"></div>
   </div>
 </template>

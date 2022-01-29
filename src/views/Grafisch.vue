@@ -1,7 +1,7 @@
 <template>
   <div class="grafisch">
-    <header class="uk-text-center">
-      <img class="uk-width-1-3" src="@assets/grafisch/header.png" />
+    <header>
+      <img src="@assets/grafisch/header.png" />
     </header>
 
     <div class="uk-flex uk-flex-center uk-grid-large uk-child-width-1-2">
@@ -20,7 +20,8 @@
       />
     </div>
 
-    <div @mouseenter="dropDown = true"
+    <div
+      @mouseenter="dropDown = true"
       class="uk-margin-large-top uk-flex uk-flex-center uk-grid-large uk-child-width-1-4"
     >
       <img
@@ -64,7 +65,7 @@
       />
     </div>
 
-    <div class="uk-padding-large"></div>
+    <div class="uk-padding" />
 
     <div @click="closeModal" class="uk-modal-full" ref="modal" uk-modal>
       <div
@@ -111,10 +112,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
 .grafisch {
-    min-height: 100vh;
-    background: #b93a19;
+  min-height: 100vh;
+  background: #b93a19;
 }
 
 img {

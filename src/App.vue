@@ -1,12 +1,10 @@
 <template>
   <div>
-    <router-view class="app" />
-
-    <footer class="footer">
-      <div>
-        Remo Efdé ©{{ new Date().getFullYear() }}
-      </div>
-    </footer>
+    <router-view class="app">
+      <!-- <footer class="uk-position-bottom footer">
+        <div>Remo Efdé ©{{ new Date().getFullYear() }}</div>
+      </footer> -->
+    </router-view>
   </div>
 </template>
 
@@ -21,15 +19,17 @@ export default {
 <style lang="less">
 @import "~@styling/index.less";
 
-html {
-  // background: #b93a19;
-}
-.app {
-  // height: 100vh;
-}
-
 .b {
   border: 3px solid pink;
+}
+
+header {
+  .uk-padding;
+  .uk-text-center;
+  img {
+    .uk-width-1-2;
+    min-width: 20rem;
+  }
 }
 
 * {
@@ -49,15 +49,19 @@ html {
   }
 }
 
-.footer {
-  margin-top: -5rem;
+.uk-card-title {
+  color: white;
+}
 
-  height: 5rem;
+.footer {
+  // margin-top: -5rem;
+
+  // height: -5rem;
   display: flex;
   justify-content: right;
   align-items: center;
   div {
-    margin: 2rem;
+    // margin: 2rem;
     font-size: 3rem;
     color: rgb(218, 218, 218);
   }

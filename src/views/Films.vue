@@ -1,18 +1,18 @@
 <template>
   <div class="films">
-    <header class="uk-text-center">
-      <img class="uk-width-1-3" src="@assets/films/header.png" />
+    <header>
+      <img src="@assets/films/header.png" />
     </header>
 
     <div class="uk-container">
       <div
-        class="uk-grid-collapse uk-grid uk-child-width-1-3@m uk-child-width-1-2@s"
+        class="uk-grid-collapse uk-child-width-1-2@l uk-child-width-1-2@s"
         uk-grid
       >
-        <div class="uk-align-center uk-width-5-6">
-          <div
+        <div class="uk-align-center uk-width-1-1">
+          <!-- <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
-          >
+          > -->
             <h3 class="uk-card-title">SHOWREEL</h3>
             <iframe
               style="aspect-ratio: 1.78"
@@ -20,7 +20,7 @@
               src="https://www.youtube.com/embed/r4x2neU120E"
             >
             </iframe>
-          </div>
+          <!-- </div> -->
         </div>
 
         <div class="uk-margin-remove-top">
@@ -163,7 +163,7 @@
           </div>
         </div> -->
 
-        <div class="uk-margin-large"></div>
+        <div class="uk-padding" />
       </div>
     </div>
   </div>

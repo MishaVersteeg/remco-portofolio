@@ -56,7 +56,10 @@
         class="widget widget-grow muziek uk-visible-toggle"
       >
         <img class="closed" src="@assets/home/muziek-1.png" />
-        <img class="uk-invisible-hover" src="@assets/home/stekker.png" />
+        <img
+          class="uk-invisible-hover stekker"
+          src="@assets/home/stekker.png"
+        />
         <img class="uk-invisible-hover" src="@assets/home/muziek-2.png" />
       </div>
 
@@ -76,6 +79,8 @@
         <img class="uk-invisible-hover" src="@assets/home/graffiti-2.png" />
       </div>
     </div>
+
+    <slot />
   </div>
 </template>
 <script>
@@ -145,7 +150,7 @@ export default {
   }
 }
 
-.widget-grow > img:hover,
+.widget-grow > img:hover:not(.stekker),
 .animate-widget {
   transform: scale(1.1);
   transition: transform 0.2s ease-in-out;
@@ -158,13 +163,13 @@ export default {
 }
 
 .over > img {
-  top: 10%;
+  top: 8%;
   left: 75%;
-  width: 15%;
+  width: 12%;
 }
 
 .muziek > img {
-  top: 32%;
+  top: 34%;
   left: 59%;
   width: 17%;
 
@@ -182,27 +187,27 @@ export default {
 }
 
 .events > img {
-  top: 23%;
+  top: 21%;
   left: 63%;
   width: 7%;
 }
 
 .tekeningen > img {
-  top: 45%;
-  left: 23%;
-  width: 14%;
+  top: 50%;
+  left: 25%;
+  width: 13%;
 }
 
 .scanner > img {
   top: 23%;
-  left: 45%;
-  width: 15%;
+  left: 47%;
+  width: 13%;
 }
 
 .ideeen > img {
-  top: 27%;
+  top: 25%;
   left: 32%;
-  width: 15%;
+  width: 14%;
 }
 
 .laptop > img {
@@ -213,7 +218,7 @@ export default {
 
 .graffiti > img {
   top: 28%;
-  left: 3%;
-  width: 25%;
+  left: 5%;
+  width: 22%;
 }
 </style>

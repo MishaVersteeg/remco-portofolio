@@ -1,11 +1,14 @@
 <template>
   <div class="muziek">
-    <header class="uk-text-center">
-      <img class="uk-width-1-3" src="@assets/muziek/header.png" />
+    <header>
+      <img src="@assets/muziek/header.png" />
     </header>
 
     <div class="uk-container">
-      <div class="uk-grid-medium uk-grid uk-child-width-1-2" uk-grid>
+      <div
+        class="uk-grid-small uk-child-width-1-1@s uk-child-width-1-2@m"
+        uk-grid
+      >
         <div>
           <div class="uk-card uk-card-default uk-card-body card">
             <h3 class="uk-card-title">MIMOSA</h3>
@@ -68,28 +71,30 @@
 
         <br />
 
-        <div class="uk-width-1-1">
-          <div
+        <div class="uk-margin-large-top uk-width-1-1">
+          <!-- <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
-          >
-            <h3 class="uk-card-title">MIXTAPE VORMGEVING</h3>
-            <img class="uk-width-1-1" src="@assets/muziek/vormgeving.jpg" />
-          </div>
+          >-->
+          <h3 class="uk-card-title">MIXTAPE VORMGEVING</h3>
+          <img class="uk-width-1-1" src="@assets/muziek/vormgeving.jpg" />
+          <!-- </div> -->
         </div>
 
-        <div class="uk-width-1-1 uk-margin-remove-top">
-          <div
+        <div class="uk-margin-large-top uk-width-1-1">
+          <!-- <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
+          > -->
+          <h3 class="uk-card-title">VIDEOCLIP</h3>
+          <iframe
+            style="aspect-ratio: 1.78"
+            class="uk-width-1-1 uk-height-auto"
+            src="https://www.youtube.com/embed/ToBxNtSZTfM"
           >
-            <h3 class="uk-card-title">VIDEOCLIP</h3>
-            <iframe
-              style="aspect-ratio: 1.78"
-              class="uk-width-1-1 uk-height-auto"
-              src="https://www.youtube.com/embed/ToBxNtSZTfM"
-            >
-            </iframe>
-          </div>
+          </iframe>
+          <!-- </div> -->
         </div>
+
+        <div class="uk-margin-large-top uk-width-1-1"></div>
 
         <div>
           <div class="uk-card uk-card-default uk-card-body card">
@@ -124,7 +129,7 @@
           </div>
         </div>
 
-        <div class="uk-padding"></div>
+        <div class="uk-padding" />
       </div>
     </div>
   </div>

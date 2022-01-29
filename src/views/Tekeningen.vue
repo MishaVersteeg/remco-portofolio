@@ -1,10 +1,11 @@
 <template>
   <div class="tekeningen">
-    <header class="uk-text-center">
-      <img class="uk-width-1-3 header" src="@assets/tekeningen/header.png" />
+    <header>
+      <img src="@assets/tekeningen/header.png" />
     </header>
 
-    <div class="uk-container uk-container-large">
+
+    <div class="uk-container">
       <div
         class="uk-grid uk-grid uk-child-width-1-4@xl uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1@s"
         uk-grid="masonry: true"
@@ -291,7 +292,7 @@
       </div>
     </div>
 
-    <div class="uk-padding"></div>
+    <div class="uk-padding" />
 
     <div @click="closeModal" class="uk-modal-full" ref="modal" uk-modal>
       <div
