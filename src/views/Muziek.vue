@@ -1,7 +1,10 @@
 <template>
   <div class="muziek">
     <header>
-      <img src="@assets/muziek/header.png" />
+      <div>
+        <img @click="$router.go(-1)" src="@assets/back.png"  class="back-button"/>
+        <img src="@assets/muziek/header.png" />
+      </div>
     </header>
 
     <div class="uk-container">
@@ -75,7 +78,13 @@
           <!-- <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
           >-->
-          <h3 class="uk-card-title">MIXTAPE VORMGEVING</h3>
+          <!-- <h3 class="uk-card-title">MIXTAPE VORMGEVING</h3> -->
+
+          <img
+            class="uk-margin-bottom item-header"
+            src="@assets/muziek/vormgeving-header.svg"
+          />
+
           <img class="uk-width-1-1" src="@assets/muziek/vormgeving.jpg" />
           <!-- </div> -->
         </div>
@@ -84,7 +93,11 @@
           <!-- <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
           > -->
-          <h3 class="uk-card-title">VIDEOCLIP</h3>
+          <!-- <h3 class="uk-card-title">VIDEOCLIP</h3> -->
+          <img
+            class="uk-margin-bottom item-header"
+            src="@assets/muziek/videoclip-header.svg"
+          />
           <iframe
             style="aspect-ratio: 1.78"
             class="uk-width-1-1 uk-height-auto"
@@ -128,10 +141,14 @@
             </audio>
           </div>
         </div>
-
-        <div class="uk-padding" />
       </div>
     </div>
+
+    <footer class="uk-padding-large">
+      <div>
+        <img @click="$router.go(-1)" src="@assets/back.png"  class="back-button"/>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -151,5 +168,9 @@
 .card-transparent {
   background: transparent;
   box-shadow: none;
+}
+
+.item-header {
+  height: 6rem;
 }
 </style>

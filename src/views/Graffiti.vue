@@ -1,7 +1,10 @@
 <template>
   <div class="graffiti">
     <header>
-      <img src="@assets/graffiti/header.png" />
+      <div>
+        <img @click="$router.go(-1)" src="@assets/back.png"  class="back-button"/>
+        <img src="@assets/graffiti/header.png" />
+      </div>
     </header>
 
     <div class="uk-container uk-container">
@@ -59,8 +62,12 @@
         </div>
       </div>
     </div>
-    
-    <div class="uk-padding"></div>
+
+    <footer class="uk-padding-large">
+      <div>
+        <img @click="$router.go(-1)" src="@assets/back.png"  class="back-button"/>
+      </div>
+    </footer>
   </div>
 </template>
 

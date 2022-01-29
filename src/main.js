@@ -9,8 +9,6 @@ Vue.prototype.$UIkit = UIkit;
 
 Vue.config.productionTip = false;
 
-document.title = "Remco's Portofolio";
-
 new Vue({
   router,
   store,

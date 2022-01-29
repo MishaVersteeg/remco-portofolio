@@ -1,10 +1,6 @@
 <template>
   <div>
-    <router-view class="app">
-      <!-- <footer class="uk-position-bottom footer">
-        <div>Remo Efdé ©{{ new Date().getFullYear() }}</div>
-      </footer> -->
-    </router-view>
+    <router-view class="app" />
   </div>
 </template>
 
@@ -23,12 +19,29 @@ export default {
   border: 3px solid pink;
 }
 
-header {
+header,
+footer {
   .uk-padding;
-  .uk-text-center;
-  img {
+  .uk-flex;
+  .uk-flex-center;
+
+  > div {
+    .uk-flex;
+    .uk-flex-column;
+
+    .uk-flex-center;
+    .uk-flex-middle;
     .uk-width-1-2;
-    min-width: 20rem;
+
+    & :nth-child(1) {
+      .uk-width-1-5;
+      cursor: pointer;
+      float: left;
+    }
+
+    & :nth-child(2) {
+      width: 100%;
+    }
   }
 }
 
@@ -53,17 +66,8 @@ header {
   color: white;
 }
 
-.footer {
-  // margin-top: -5rem;
-
-  // height: -5rem;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  div {
-    // margin: 2rem;
-    font-size: 3rem;
-    color: rgb(218, 218, 218);
-  }
+.back-button:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }
 </style>

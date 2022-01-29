@@ -1,28 +1,39 @@
 <template>
   <div class="ideeen">
     <header>
-      <img src="@assets/ideeen/header.png" />
+      <div>
+        <img
+          @click="$router.go(-1)"
+          src="@assets/back.png"
+          class="back-button"
+        />
+        <img src="@assets/ideeen/header.png" />
+      </div>
     </header>
 
-    <div class="uk-grid-small uk-child-width-1-3">
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div>
-        <img src="" alt="" />
+    <div class="uk-container">
+      <div class="uk-grid-large uk-child-width-1-1" uk-grid>
+        <div>
+          <img class="uk-width-1-1" src="@assets/ideeen/idee-1.jpg" />
+        </div>
+        <div>
+          <img class="uk-width-1-1" src="@assets/ideeen/idee-2.jpg" />
+        </div>
+        <div>
+          <img class="uk-width-1-1" src="@assets/ideeen/idee-3.jpg" />
+        </div>
       </div>
     </div>
 
-    <div class="uk-padding" />
+    <footer class="uk-padding-large">
+      <div>
+        <img
+          @click="$router.go(-1)"
+          src="@assets/back.png"
+          class="back-button"
+        />
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -33,7 +44,9 @@ export default {};
 <style lang="less" scoped>
 .ideeen {
   min-height: 100vh;
+  background: rgb(33, 33, 156);
 }
+
 .header {
   width: 30rem;
 }

@@ -1,7 +1,10 @@
 <template>
   <div class="grafisch">
     <header>
-      <img src="@assets/grafisch/header.png" />
+      <div>
+        <img @click="$router.go(-1)" src="@assets/back.png"  class="back-button"/>
+        <img src="@assets/grafisch/header.png" />
+      </div>
     </header>
 
     <div class="uk-flex uk-flex-center uk-grid-large uk-child-width-1-2">
@@ -65,7 +68,6 @@
       />
     </div>
 
-    <div class="uk-padding" />
 
     <div @click="closeModal" class="uk-modal-full" ref="modal" uk-modal>
       <div
@@ -79,6 +81,12 @@
         />
       </div>
     </div>
+
+            <footer class="uk-padding-large">
+      <div>
+        <img @click="$router.go(-1)" src="@assets/back.png"  class="back-button"/>
+      </div>
+    </footer>
   </div>
 </template>
 

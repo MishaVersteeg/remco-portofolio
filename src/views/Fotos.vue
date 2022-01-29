@@ -1,7 +1,14 @@
 <template>
   <div class="fotos">
     <header>
-      <img src="@assets/fotos/header.png" />
+      <div>
+        <img
+          @click="$router.go(-1)"
+          src="@assets/back.png"
+          class="back-button"
+        />
+        <img class="header-image" src="@assets/fotos/header.png" />
+      </div>
     </header>
 
     <div class="uk-container">
@@ -289,8 +296,6 @@
       </div>
     </div>
 
-    <div class="uk-padding" />
-    
     <div @click="closeModal" class="uk-modal-full" ref="modal" uk-modal>
       <div
         :style="{ background: modalBackground }"
@@ -303,6 +308,16 @@
         />
       </div>
     </div>
+
+    <footer class="uk-padding-large">
+      <div>
+        <img
+          @click="$router.go(-1)"
+          src="@assets/back.png"
+          class="back-button"
+        />
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -340,12 +355,12 @@ export default {
 }
 
 img {
-  cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
 
-img:hover:not(.modal, .modal > *):not(.header) {
+img:hover:not(.modal, .modal > *):not(.header-image) {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .modal {

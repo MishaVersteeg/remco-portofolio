@@ -1,7 +1,10 @@
 <template>
   <div class="films">
     <header>
-      <img src="@assets/films/header.png" />
+      <div>
+        <img @click="$router.go(-1)" src="@assets/back.png"  class="back-button"/>
+        <img src="@assets/films/header.png" />
+      </div>
     </header>
 
     <div class="uk-container">
@@ -13,13 +16,18 @@
           <!-- <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
           > -->
-            <h3 class="uk-card-title">SHOWREEL</h3>
-            <iframe
-              style="aspect-ratio: 1.78"
-              class="uk-width-1-1 uk-height-auto"
-              src="https://www.youtube.com/embed/r4x2neU120E"
-            >
-            </iframe>
+          <!-- <h3 class="uk-card-title">SHOWREEL</h3> -->
+          <img
+            class="uk-margin-bottom item-header"
+            src="@assets/films/showreel-header.svg"
+          />
+
+          <iframe
+            style="aspect-ratio: 1.78"
+            class="uk-width-1-1 uk-height-auto"
+            src="https://www.youtube.com/embed/r4x2neU120E"
+          >
+          </iframe>
           <!-- </div> -->
         </div>
 
@@ -27,7 +35,10 @@
           <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
           >
-            <h3 class="uk-card-title">KAAIMAN</h3>
+            <img
+              class="uk-margin-bottom item-header"
+              src="@assets/films/kaaiman-header.svg"
+            />
             <iframe
               style="aspect-ratio: 1.78"
               class="uk-width-1-1 uk-height-auto"
@@ -41,7 +52,10 @@
           <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
           >
-            <h3 class="uk-card-title">VIDEO ESSAY</h3>
+            <img
+              class="uk-margin-bottom item-header"
+              src="@assets/films/essay-header.svg"
+            />
             <iframe
               style="aspect-ratio: 1.78"
               class="uk-width-1-1 uk-height-auto"
@@ -55,7 +69,10 @@
           <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
           >
-            <h3 class="uk-card-title">NACHTPORTIER</h3>
+            <img
+              class="uk-margin-bottom item-header"
+              src="@assets/films/nachtportier-header.svg"
+            />
             <iframe
               style="aspect-ratio: 1.78"
               class="uk-width-1-1 uk-height-auto"
@@ -69,7 +86,10 @@
           <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
           >
-            <h3 class="uk-card-title">ROCK DE BRAZILIAAN</h3>
+            <img
+              class="uk-margin-bottom item-header"
+              src="@assets/films/rock-header.svg"
+            />
             <iframe
               style="aspect-ratio: 1.78"
               class="uk-width-1-1 uk-height-auto"
@@ -83,7 +103,10 @@
           <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
           >
-            <h3 class="uk-card-title">FOKS DE WEZEL</h3>
+            <img
+              class="uk-margin-bottom item-header"
+              src="@assets/films/foks-header.svg"
+            />
             <iframe
               style="aspect-ratio: 1.78"
               class="uk-width-1-1 uk-height-auto"
@@ -97,7 +120,10 @@
           <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
           >
-            <h3 class="uk-card-title">DE DICTATOR</h3>
+            <img
+              class="uk-margin-bottom item-header"
+              src="@assets/films/dictator-header.svg"
+            />
             <iframe
               style="aspect-ratio: 1.78"
               class="uk-width-1-1 uk-height-auto"
@@ -111,7 +137,10 @@
           <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
           >
-            <h3 class="uk-card-title">DE NANO TUINSTRAWORP</h3>
+            <img
+              class="uk-margin-bottom item-header"
+              src="@assets/films/tuinstra-worp-header.svg"
+            />
             <iframe
               style="aspect-ratio: 1.78"
               class="uk-width-1-1 uk-height-auto"
@@ -125,7 +154,10 @@
           <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
           >
-            <h3 class="uk-card-title">SKOLFER</h3>
+            <img
+              class="uk-margin-bottom item-header"
+              src="@assets/films/skolfer-header.svg"
+            />
             <iframe
               style="aspect-ratio: 1.78"
               class="uk-width-1-1 uk-height-auto"
@@ -139,7 +171,10 @@
           <div
             class="uk-card uk-card-default uk-card-body card card-transparent"
           >
-            <h3 class="uk-card-title">TERRA INCOGNITA</h3>
+            <img
+              class="uk-margin-bottom item-header"
+              src="@assets/films/terra-incognita-header.svg"
+            />
             <iframe
               style="aspect-ratio: 1.78"
               class="uk-width-1-1 uk-height-auto"
@@ -148,24 +183,13 @@
             </iframe>
           </div>
         </div>
-
-        <!-- <div class="uk-margin-remove-top">
-          <div
-            class="uk-card uk-card-default uk-card-body card card-transparent"
-          >
-            <h3 class="uk-card-title">LOOKS</h3>
-                  <iframe
-                style="aspect-ratio: 1.78"
-                class="uk-width-1-1 uk-height-auto"
-                src="https://www.youtube.com/embed/r4x2neU120E"
-              >
-              </iframe>
-          </div>
-        </div> -->
-
-        <div class="uk-padding" />
       </div>
     </div>
+    <footer class="uk-padding-large">
+      <div>
+        <img @click="$router.go(-1)" src="@assets/back.png"  class="back-button"/>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -185,5 +209,9 @@
 .card-transparent {
   background: transparent;
   box-shadow: none;
+}
+
+.item-header {
+  height: 3rem;
 }
 </style>

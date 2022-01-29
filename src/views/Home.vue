@@ -78,9 +78,11 @@
         <img class="closed" src="@assets/home/graffiti-1.png" />
         <img class="uk-invisible-hover" src="@assets/home/graffiti-2.png" />
       </div>
-    </div>
 
-    <slot />
+      <div class="copy-right-container uk-text-right">
+       <img class="uk-invisible-hover" src="@assets/home/copy-right.png" />
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -134,6 +136,7 @@ export default {
 }
 
 .background {
+  // transform: scale(.8);
   max-width: 100vw;
   max-height: 100vh;
   aspect-ratio: 16 / 9;
@@ -220,5 +223,13 @@ export default {
   top: 28%;
   left: 5%;
   width: 22%;
+}
+
+.copy-right-container {
+  position: absolute;
+
+  top: 63%;
+  right: 0%;
+  width:12%;
 }
 </style>

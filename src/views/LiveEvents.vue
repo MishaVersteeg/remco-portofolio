@@ -2,7 +2,10 @@
   <div class="live-events">
     <div class="live-events-1">
       <header>
-        <img src="@assets/live-events/header.png" />
+        <div>
+          <img @click="$router.go(-1)" src="@assets/back.png"  class="back-button"/>
+          <img src="@assets/live-events/header.png" />
+        </div>
       </header>
 
       <div class="uk-container">
@@ -11,7 +14,10 @@
           uk-grid
         >
           <div class="uk-width-1-1">
-            <h3 class="uk-card-title">HET VERMISTE VARKEN</h3>
+            <img
+              class="uk-margin-bottom item-header"
+              src="@assets/live-events/vermiste-varken-header.svg"
+            />
             <iframe
               style="aspect-ratio: 1.78"
               class="uk-width-1-1 uk-height-auto"
@@ -40,10 +46,14 @@
         <div
           class="uk-card uk-card-default uk-card-body card card-transparent uk-padding-remove-left"
         >
-          <h3 class="uk-card-title">HUISKAMER FILMFESTIVAL</h3>
+          <img
+            class="uk-margin-bottom item-header"
+            src="@assets/live-events/filmfestival-header.svg"
+          />
         </div>
 
         <div
+          style="margin-top: -2rem"
           class="uk-grid-small uk-child-width-1-3@m uk-child-width-1-2@s"
           uk-grid="masonry: true"
         >
@@ -71,8 +81,13 @@
 
           <!-- <img src="@assets/live-events/huiskamerfilmfestival-6.JPG" /> -->
         </div>
-        <div class="uk-padding" />
       </div>
+
+          <footer class="uk-padding-large">
+      <div>
+        <img @click="$router.go(-1)" src="@assets/back.png"  class="back-button"/>
+      </div>
+    </footer>
     </div>
   </div>
 </template>
@@ -104,5 +119,9 @@ export default {};
 .card-transparent {
   background: transparent;
   box-shadow: none;
+}
+
+.item-header {
+  height: 6rem;
 }
 </style>
