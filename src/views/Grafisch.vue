@@ -122,7 +122,7 @@ export default {
 <style lang="less" scoped>
 .grafisch {
   min-height: 100vh;
-  background: #b93a19;
+  background: #d35725;
 }
 
 img {

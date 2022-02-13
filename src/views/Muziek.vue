@@ -155,7 +155,7 @@
 <style lang="less" scoped>
 .muziek {
   min-height: 100vh;
-  background: rgb(42, 83, 170);
+  background: rgb(31, 101, 167);
 }
 
 .card {

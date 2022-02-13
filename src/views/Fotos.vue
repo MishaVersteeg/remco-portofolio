@@ -293,6 +293,34 @@
             :data-src="require('@assets/fotos/klein/foto-39.jpg')"
           />
         </div>
+         <div>
+          <img
+            uk-img
+            @click="openModal('foto-40.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-40.jpg')"
+          />
+        </div>
+         <div>
+          <img
+            uk-img
+            @click="openModal('foto-41.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-41.jpg')"
+          />
+        </div>
+         <div>
+          <img
+            uk-img
+            @click="openModal('foto-43.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-43.jpg')"
+          />
+        </div>
+         <div>
+          <img
+            uk-img
+            @click="openModal('foto-44.jpg')"
+            :data-src="require('@assets/fotos/klein/foto-44.jpg')"
+          />
+        </div>
       </div>
     </div>
 

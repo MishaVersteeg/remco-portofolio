@@ -44,7 +44,7 @@ export default {};
 <style lang="less" scoped>
 .ideeen {
   min-height: 100vh;
-  background: rgb(33, 33, 156);
+  background: rgb(31, 101, 167);
 }
 
 .header {

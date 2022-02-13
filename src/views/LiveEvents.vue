@@ -3,7 +3,11 @@
     <div class="live-events-1">
       <header>
         <div>
-          <img @click="$router.go(-1)" src="@assets/back.png"  class="back-button"/>
+          <img
+            @click="$router.go(-1)"
+            src="@assets/back.png"
+            class="back-button"
+          />
           <img src="@assets/live-events/header.png" />
         </div>
       </header>
@@ -72,22 +76,26 @@
           <div>
             <img src="@assets/live-events/huiskamerfilmfestival-3.jpg" />
           </div>
+
           <div>
             <img src="@assets/live-events/huiskamerfilmfestival-6.jpg" />
           </div>
+          
           <div>
             <img src="@assets/live-events/huiskamerfilmfestival-5.jpg" />
           </div>
-
-          <!-- <img src="@assets/live-events/huiskamerfilmfestival-6.JPG" /> -->
         </div>
       </div>
 
-          <footer class="uk-padding-large">
-      <div>
-        <img @click="$router.go(-1)" src="@assets/back.png"  class="back-button"/>
-      </div>
-    </footer>
+      <footer class="uk-padding-large">
+        <div>
+          <img
+            @click="$router.go(-1)"
+            src="@assets/back.png"
+            class="back-button"
+          />
+        </div>
+      </footer>
     </div>
   </div>
 </template>
@@ -102,11 +110,11 @@ export default {};
 }
 
 .live-events-1 {
-  background: #276386;
+  background: #d35725;
 }
 
 .live-events-2 {
-  background: #0b3a55;
+  background: #d32b25;
 }
 
 .card {

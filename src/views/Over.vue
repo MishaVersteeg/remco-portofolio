@@ -33,12 +33,12 @@
 
     <div class="uk-container uk-width-1-1">
       <div class="uk-margin-medium-top uk-container uk-flex uk-flex-middle">
-        <img style="width: 25%" src="@assets/over/remco-1.jpg" />
+        <img style="width: 25%" src="@assets/over/remco-2.jpg" />
         <div style="width: 5%" class="uk-padding">
           <img src="@assets/pijl.png" />
         </div>
 
-        <img style="width: 25%" src="@assets/over/remco-2.jpg" />
+        <img style="width: 25%" src="@assets/over/remco-1.jpg" />
         <div style="width: 5%" class="uk-padding">
           <img src="@assets/pijl.png" />
         </div>
@@ -62,7 +62,7 @@
 <style lang="less" scoped>
 .films {
   min-height: 100vh;
-  background: #972929;
+  background: #d35725;
 }
 
 .card {
